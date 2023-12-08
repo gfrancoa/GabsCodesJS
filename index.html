@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>GabCodes | Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo-container">
+          <img class="logo-img" src="img/logo.png" alt="gabcodes-logo" />
+          <span class="logo-text">Gab Codes</span>
+        </a>
+        <ul class="topnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="index.html#aboutme">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="carousel-container">
+      <div class="carousel-text-container">
+        <div class="carousel-text">
+          Spreading the joy of programming, one post at a time.
+        </div>
+        <form action="posts.html" class="carousel-form">
+          <input type="text" placeholder="Search" required />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+          </li>
+          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+          </li>
+          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+          </li>
+          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <section class="featured-posts">
+      <p class="title" data-aos="fade-left">Featured Posts</p>
+      <article class="featured-post" data-aos="fade-down">
+        <img src="img/feat1.png" alt="" />
+        <div class="content">
+          <p class="subtitle">
+            <a href="post.html">OOP 101 Part I - Why OOP?</a>
+          </p>
+          <p class="description">
+            At the beginning, when people started doing code, procedural
+            programming was the way to go: one instruction was written after the
+            other. When applications started gaining complexity, and operations
+            became repetitive, programmers started to implement functions that
+            they could reuse and where they could group a set of instructions to
+            be executed that were related to a functionality or a task.
+          </p>
+        </div>
+      </article>
+
+      <article class="featured-post" data-aos="fade-down">
+        <img src="img/feat2.png" alt="" />
+        <div class="content">
+          <p class="subtitle">
+            <a href="post.html">Cheat sheet for Angular concepts</a>
+          </p>
+          <p class="description">
+            As a beginner in Angular and not a regular user of the framework
+            sometimes I need a refresher of the main concepts. I decided to put
+            the main concepts with examples here. It might help you too.
+          </p>
+        </div>
+      </article>
+
+      <article class="featured-post" data-aos="fade-up">
+        <img src="img/feat3.png" alt="" />
+        <div class="content">
+          <p class="subtitle"><a href="post.html">Mindfulness and coding</a></p>
+          <p class="description">
+            Mindfulness makes you a better programmer (and human) by training
+            your brain to pay attention and engage in the task at hand. With
+            practice, mindfulness will increase your productivity by bringing
+            awareness to your inner and outer distractions. When you practice
+            mindfulness, you are also cultivating compassion for yourself and
+            others. This helps you to be less reactive and relate to stress in a
+            healthy way.
+          </p>
+        </div>
+      </article>
+
+      <article class="featured-post" data-aos="fade-down">
+        <img src="img/feat4.png" alt="" />
+        <div class="content">
+          <p class="subtitle">
+            <a href="post.html"
+              >Obsidian: The note app that behaves as a second brain</a
+            >
+          </p>
+          <p class="description">
+            Creating notes is an exercise in putting thoughts into words, and
+            everyone thinks differently, so note-taking demands flexibility.
+            Obsidian is the most flexible note-taking app out there. In
+            software, flexibility usually means a tool can bend to your desires,
+            but it also means you might have to spend significant time
+            customizing it. If you need a note-taking system to work exactly the
+            way you want and don't mind taking the time to get it there,
+            Obsidian is the application you should check out first.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="about-me" id="aboutme">
+      <p class="title">About me</p>
+      <div class="img-container">
+        <img src="img/gab.png" alt="" />
+      </div>
+      <p>
+        Hi! I'm Gabriela. My friends call me Gabs or Gaby. I started The
+        Unapologetic Blog as an opportunity to share the things that I learned
+        over time that I find interesting (I like to take notes of everything
+        📝) and I would like to share with others. The knowledge becomes more
+        significant when you share it. The main topic discussed here is
+        technology, but I would also like to write about other areas of my life
+        as I discover them along the way. I hope you enjoy going with me in this
+        journey🙂.
+      </p>
+      <p>
+        It's unapologetic because I want to feel I can write about anything
+        without having to apologize because it's not too technical, because it's
+        not in the original scope, because the posts are too long or too short
+        🫠. Just to write accurate free content it's enough for the moment 🧐.
+      </p>
+      <p>
+        I'm a Colombian Chemical Engineer 🧪 living in Montreal 🍁, who decided
+        (as many nowadays) to try programming 🐱‍💻, which is what I have been
+        doing since 2020. Currently I'm pursuing an AEC in Programming and
+        Internet Technologies at Institut Superieur d'informatique - ISI, so a
+        great part of this blog it's composed by my class notes. I'm also a
+        researcher and science teacher 👩‍🔬. In my free time, I am a meditation
+        instructor 🧘‍♀️and I play ukulele 🎵.
+      </p>
+
+      <p>
+        That is reason why I chose the rainbow 🌈 as the logo for this project.
+        Besides I love rainbows and color, I find I can be as diversified in the
+        number of things I like to learn, as the colors of the rainbow. And I
+        think that is the way all human beings are💃. It's hard (and boring) to
+        frame people in only one area of their lives.
+      </p>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="gabscodes"
+      data-description="Support me on Buy me a coffee!"
+      data-message="If you would like to support my content creation you can buy me a pizza so I can keep on coding :)"
+      data-color="#5F7FFF"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
+    <footer>
+      <p class="subtitle">Let's keep the conversation going</p>
+      <div class="social-container">
+        <a
+          href="https://www.facebook.com/GabyFrank/"
+          class="fa fa-facebook"
+        ></a>
+        <a href="https://twitter.com/gab_codes" class="fa fa-twitter"></a>
+        <a
+          href="https://www.linkedin.com/in/gabriela-franco-arnedo/"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/gabyfrank03/"
+          class="fa fa-instagram"
+        ></a>
+        <a href="https://github.com/gfrancoa" class="fa fa-github"></a>
+      </div>
+      <p class="title">Subscribe to get the latest updates</p>
+      <form action="#" class="subscribe-form">
+        <input type="email" placeholder="Your e-mail" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="copyright">
+        <p>GabCodes 💻</p>
+        <p>
+          <a href="mailto:gfrancoa@outlook.com">gfrancoa@outlook.com</a> |
+          <a href="tel:+14388551257">+1 (438) 855-1257</a>
+        </p>
+        <p>Copyright &copy; 2023. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

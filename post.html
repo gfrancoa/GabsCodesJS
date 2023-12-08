@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>GabCodes | Post</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo-container">
+          <img class="logo-img" src="img/logo.png" alt="gabcodes-logo" />
+          <span class="logo-text">Gab Codes</span>
+        </a>
+        <ul class="topnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="index.html#aboutme">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="post-detail">
+      <p class="title">OOP 101 Part I - Why OOP?</p>
+      <img src="img/1.png" alt="" />
+      <div class="content">
+        <p>
+          At the beginning, when people started doing code, procedural
+          programming was the way to go: one instruction was written after the
+          other. When applications started gaining complexity, and operations
+          became repetitive, programmers started to implement functions that
+          they could reuse and where they could group a set of instructions to
+          be executed that were related to a functionality or a task.
+        </p>
+        <p>
+          However, this was not enough. Now the code looked like a never-ending
+          list of random functions. And even though the functionalities could be
+          grouped by files, there was a better way to organize it.
+        </p>
+
+        <blockquote>
+          Remember programming it's all about modeling the real world and give
+          instructions so detailed that the machine is able to automatize tasks
+          we were doing by ourselves before. Computers, in its original state,
+          are able to compute massive amount of data (faster than a human) but
+          you have to tell them how to do it. They are not able to make
+          decisions or to analyze data by themselves, with the exception of the
+          Artificial Intelligence applications so widely used nowadays, but even
+          those programs had to be taught at the beginning of how to behave and
+          which constraints to include.
+        </blockquote>
+
+        <button class="accordion">OOP basics</button>
+        <div class="panel">
+          <p>
+            Object Oriented Programming (OOP) was designed as a way to model a
+            system, to make it closer to the real life, grouping both data and
+            behavior in a single entity called class. By data we mean variables
+            and by behavior we mean methods. Just to clarify: The functions
+            inside a class we call them methods and the variables commonly
+            receive the name of members (for the latter exists more names but we
+            will use this one).
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SiBw7os-_zI"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <button class="accordion">Classes</button>
+        <div class="panel">
+          <p>
+            Think of a class as a template. We can reuse this template as many
+            times as we want. The entities that we create using this template we
+            call them objects, so objects are materializations of a class. In
+            programming we say: an object is an instance of a class.
+          </p>
+        </div>
+
+        <button class="accordion">Class members</button>
+        <div class="panel">
+          <p>
+            But take into account that every object can be slightly different
+            (or not) from the other because its members could have different
+            values. For example, I can have the class student, which has as
+            members name, address and date of birth but every object is going to
+            instantiate this class in a different way since the values for the
+            variables can be different.
+          </p>
+          <p>
+            But what if two objects have the exact same value? Are they the same
+            object? Well, I can print the same book two times but even though
+            they have the same content they are two books, two objects. Every
+            created object normally is located in a different address in memory
+            (take into account this may vary between programming languages and
+            the way they do the memory management).
+          </p>
+        </div>
+      </div>
+      <br />
+      <p class="title">Other resources</p>
+      <p>Click on each element on the carousel to access to the content:</p>
+    </section>
+
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__linkslide">
+          <a target="_blank" href="https://www.github.com/gfrancoa"
+            ><div class="carousel__snapper"></div
+          ></a>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__linkslide">
+          <a
+            href="https://www.youtube.com/freecodecamp"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="carousel__snapper"></div
+          ></a>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__linkslide">
+          <a href="contact.html"><div class="carousel__snapper"></div></a>
+        </li>
+      </ol>
+    </section>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="gabscodes"
+      data-description="Support me on Buy me a coffee!"
+      data-message="If you would like to support my content creation you can buy me a pizza so I can keep on coding :)"
+      data-color="#5F7FFF"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
+    <footer>
+      <p class="subtitle">Let's keep the conversation going</p>
+      <div class="social-container">
+        <a
+          href="https://www.facebook.com/GabyFrank/"
+          class="fa fa-facebook"
+        ></a>
+        <a href="https://twitter.com/gab_codes" class="fa fa-twitter"></a>
+        <a
+          href="https://www.linkedin.com/in/gabriela-franco-arnedo/"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/gabyfrank03/"
+          class="fa fa-instagram"
+        ></a>
+        <a href="https://github.com/gfrancoa" class="fa fa-github"></a>
+      </div>
+      <p class="title">Subscribe to get the latest updates</p>
+      <form action="#" class="subscribe-form">
+        <input type="email" placeholder="Your e-mail" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="copyright">
+        <p>GabCodes 💻</p>
+        <p>
+          <a href="mailto:gfrancoa@outlook.com">gfrancoa@outlook.com</a> |
+          <a href="tel:+14388551257">+1 (438) 855-1257</a>
+        </p>
+        <p>Copyright &copy; 2023. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>GabCodes | Contact me</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo-container">
+          <img class="logo-img" src="img/logo.png" alt="gabcodes-logo" />
+          <span class="logo-text">Gab Codes</span>
+        </a>
+        <ul class="topnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="index.html#aboutme">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact">
+      <section class="form-container">
+        <p class="title">Contact me!</p>
+        <form>
+          <input type="text" placeholder="Name" required autofocus /><span
+            >*</span
+          >
+          <input
+            type="tel"
+            title="Format: 123-456-7890"
+            placeholder="Phone Number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          /><span>*</span>
+          <input type="number" placeholder="Age" />
+          <input type="email" placeholder="E-mail" required /><span>*</span>
+          <input
+            type="text"
+            list="roles"
+            name="role"
+            placeholder="Role"
+            required
+          />
+          <span>*</span>
+          <datalist id="roles">
+            <option value="Front-end dev"></option>
+            <option value="Back-end dev"></option>
+            <option value="Fullstack dev"></option>
+            <option value="Student"></option>
+            <option value="DevOps"></option>
+          </datalist>
+
+          <label>Preferred language for answer</label>
+          <div>
+            <label>
+              <input type="radio" name="lang" value="en" checked />
+              English
+            </label>
+            <label>
+              <input type="radio" name="lang" value="fr" />
+              French
+            </label>
+            <label>
+              <input type="radio" name="lang" value="es" />
+              Spanish
+            </label>
+          </div>
+
+          <textarea
+            cols="30"
+            rows="3"
+            placeholder="Your message here"
+            required
+            maxlength="255"
+          ></textarea>
+          <span>*</span>
+
+          <div>
+            <input id="spam" type="checkbox" value="1" checked />
+            <label for="spam"> I would like to signup to the newsletter</label>
+          </div>
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+      </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.2390938305143!2d-73.56405642470251!3d45.50526537107473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91b06eaa764df%3A0xbad7d3d16a9e22f1!2sColl%C3%A8ge%20Universel%20-%20Campus%20Montr%C3%A9al!5e0!3m2!1ses!2sca!4v1682756384999!5m2!1ses!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </div>
+
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="gabscodes"
+      data-description="Support me on Buy me a coffee!"
+      data-message="If you would like to support my content creation you can buy me a pizza so I can keep on coding :)"
+      data-color="#5F7FFF"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
+    <footer>
+      <p class="subtitle">Let's keep the conversation going</p>
+      <div class="social-container">
+        <a
+          href="https://www.facebook.com/GabyFrank/"
+          class="fa fa-facebook"
+        ></a>
+        <a href="https://twitter.com/gab_codes" class="fa fa-twitter"></a>
+        <a
+          href="https://www.linkedin.com/in/gabriela-franco-arnedo/"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/gabyfrank03/"
+          class="fa fa-instagram"
+        ></a>
+        <a href="https://github.com/gfrancoa" class="fa fa-github"></a>
+      </div>
+      <p class="title">Subscribe to get the latest updates</p>
+      <form action="#" class="subscribe-form">
+        <input type="email" placeholder="Your e-mail" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="copyright">
+        <p>GabCodes 💻</p>
+        <p>
+          <a href="mailto:gfrancoa@outlook.com">gfrancoa@outlook.com</a> |
+          <a href="tel:+14388551257">+1 (438) 855-1257</a>
+        </p>
+        <p>Copyright &copy; 2023. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
